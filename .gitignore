@@ -1,0 +1,33 @@
+# Local environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Local development aids
+/.agents/
+/template/
+
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+/build/
+/dist/
+
+# Large runtime data; small fixtures under tests/ remain tracked
+/data/
+/datasets/
+/cache/
+/outputs/
+
+# Operating-system files
+.DS_Store
