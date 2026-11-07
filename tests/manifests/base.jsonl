@@ -1,0 +1,4 @@
+{"source_id": "fixture", "asset_id": "simple", "relative_path": "simple.glb", "expected_sha256": "5b170f791ee56a690a13f13ab043c95cf2db7d6cace0cd6cfcee3d6328b98057"}
+{"source_id": "fixture", "asset_id": "attributed-scene", "relative_path": "attributed-scene.glb", "expected_sha256": "fb52cab7b979f95be6adab4afcb317c859c79cfd709d3c92fb469af8f17e8c3c"}
+{"source_id": "fixture", "asset_id": "ascii-square", "relative_path": "ascii-square.stl", "expected_sha256": "380f6f494798cfe09fcf99bc940c41da7dffbd33a217019ed61cfb743b1b874e"}
+{"source_id": "fixture", "asset_id": "binary-square", "relative_path": "binary-square.stl", "expected_sha256": "16e8aa0b82d5115aa62281865d81a8e3897e1fa372faa94251f0978a45ee3414"}

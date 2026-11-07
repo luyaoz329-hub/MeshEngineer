@@ -1,0 +1,6 @@
+{"asset_id": "91761aa110cb4a9298ad28a0112b5d2b", "expected_sha256": "12e75bf905092cd347d890ee8d55df758fc0be5de21be537d4170c32689adfae", "relative_path": "source/glbs/000-046/91761aa110cb4a9298ad28a0112b5d2b.glb", "source_id": "objaverse-1.0"}
+{"asset_id": "e408136e84414784a142e40eb876bbed", "expected_sha256": "9cba4cd3dda6532113e0846dee3f7b6e7e592f7d4368874e8566d44b011e7b16", "relative_path": "source/glbs/000-075/e408136e84414784a142e40eb876bbed.glb", "source_id": "objaverse-1.0"}
+{"asset_id": "bfa1801f2a7e40668953e4cd64472cde", "expected_sha256": "c839308d7e76f0aeeca262d8895c5f2543951e8d45eef50bf2821079373644a4", "relative_path": "source/glbs/000-121/bfa1801f2a7e40668953e4cd64472cde.glb", "source_id": "objaverse-1.0"}
+{"asset_id": "ef94916c83e441d483e6e3b9647d274b", "expected_sha256": "940453d10ff9bd5f49d32857c606c242e745191d9804a7fae2c7566e0dd0475c", "relative_path": "source/glbs/000-028/ef94916c83e441d483e6e3b9647d274b.glb", "source_id": "objaverse-1.0"}
+{"asset_id": "100026", "expected_sha256": "f1f1a4d7239df03d084d0e3dbfeba467f4e32a1f227b15b71e1e3881055479b5", "relative_path": "raw_meshes/100026.stl", "source_id": "thingi10k"}
+{"asset_id": "100045", "expected_sha256": "da35d5f4b984c8c4e9c45182a68fe3f73262cebe0aa5d46691c92860a2712e09", "relative_path": "raw_meshes/100045.stl", "source_id": "thingi10k"}

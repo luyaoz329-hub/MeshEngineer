@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling==1.33.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "meshengineer"
+version = "0.1.0.dev0"
+description = "Typed, reproducible static triangle mesh import and processing."
+requires-python = ">=3.14.6,<3.15"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["numpy==2.5.4", "pygltflib==1.16.5"]
+
+[project.scripts]
+meshengineer = "meshengineer.cli.main:main"
+
+[dependency-groups]
+dev = ["mypy==2.4.1"]
+
+[tool.uv]
+required-version = "==0.13.7"
+python-downloads = "never"
+cache-dir = "temp/uv-cache"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/meshengineer"]
+
+[tool.mypy]
+python_version = "3.14"
+strict = true

@@ -1,0 +1,277 @@
+{
+  "assets": [
+    {
+      "asset_id": "91761aa110cb4a9298ad28a0112b5d2b",
+      "face_count": 96,
+      "features": [
+        "hierarchy",
+        "images",
+        "multiple-primitives",
+        "table"
+      ],
+      "first_triangle": [
+        [
+          8.0,
+          3.0,
+          -7.0
+        ],
+        [
+          8.0,
+          -8.0,
+          -7.0
+        ],
+        [
+          8.0,
+          3.0,
+          -8.0
+        ]
+      ],
+      "format": "glb",
+      "image_sha256": [
+        "465c7db6b3485b7a245e5f45e08c16fdfb205da14bdc122e52ff3057bb00aff4"
+      ],
+      "instance_count": 8,
+      "material_count": 1,
+      "mesh_count": 8,
+      "primitive_materials": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "license": "by",
+        "revision": "556637099bf4fa79ea7b239d0d9c328b8a2e9ac8",
+        "url": "https://huggingface.co/datasets/allenai/objaverse/resolve/556637099bf4fa79ea7b239d0d9c328b8a2e9ac8/glbs/000-046/91761aa110cb4a9298ad28a0112b5d2b.glb"
+      },
+      "selected_scene_index": 0,
+      "source_id": "objaverse-1.0",
+      "status": "ok",
+      "vertex_count": 192
+    },
+    {
+      "asset_id": "e408136e84414784a142e40eb876bbed",
+      "face_count": 192,
+      "features": [
+        "hierarchy",
+        "mug",
+        "multiple-primitives"
+      ],
+      "first_triangle": [
+        [
+          -0.28417089581489563,
+          -0.046172261238098145,
+          -0.6386619210243225
+        ],
+        [
+          -0.17051300406455994,
+          0.04900854080915451,
+          0.6392278075218201
+        ],
+        [
+          -0.1730785071849823,
+          -0.021948570385575294,
+          0.6568201184272766
+        ]
+      ],
+      "format": "glb",
+      "image_sha256": [],
+      "instance_count": 3,
+      "material_count": 3,
+      "mesh_count": 3,
+      "primitive_materials": [
+        2,
+        1,
+        0
+      ],
+      "provenance": {
+        "license": "by",
+        "revision": "556637099bf4fa79ea7b239d0d9c328b8a2e9ac8",
+        "url": "https://huggingface.co/datasets/allenai/objaverse/resolve/556637099bf4fa79ea7b239d0d9c328b8a2e9ac8/glbs/000-075/e408136e84414784a142e40eb876bbed.glb"
+      },
+      "selected_scene_index": 0,
+      "source_id": "objaverse-1.0",
+      "status": "ok",
+      "vertex_count": 484
+    },
+    {
+      "asset_id": "bfa1801f2a7e40668953e4cd64472cde",
+      "face_count": 700,
+      "features": [
+        "hierarchy",
+        "vase"
+      ],
+      "first_triangle": [
+        [
+          -0.0,
+          0.10125400125980377,
+          0.19391199946403503
+        ],
+        [
+          0.0,
+          0.13244099915027618,
+          0.233814999461174
+        ],
+        [
+          0.050682999193668365,
+          0.12235900014638901,
+          0.233814999461174
+        ]
+      ],
+      "format": "glb",
+      "image_sha256": [],
+      "instance_count": 1,
+      "material_count": 1,
+      "mesh_count": 1,
+      "primitive_materials": [
+        0
+      ],
+      "provenance": {
+        "license": "by",
+        "revision": "556637099bf4fa79ea7b239d0d9c328b8a2e9ac8",
+        "url": "https://huggingface.co/datasets/allenai/objaverse/resolve/556637099bf4fa79ea7b239d0d9c328b8a2e9ac8/glbs/000-121/bfa1801f2a7e40668953e4cd64472cde.glb"
+      },
+      "selected_scene_index": 0,
+      "source_id": "objaverse-1.0",
+      "status": "ok",
+      "vertex_count": 406
+    },
+    {
+      "asset_id": "ef94916c83e441d483e6e3b9647d274b",
+      "face_count": 522,
+      "features": [
+        "bottle",
+        "hierarchy",
+        "multiple-primitives"
+      ],
+      "first_triangle": [
+        [
+          1.1811023950576782,
+          0.843570351600647,
+          0.0
+        ],
+        [
+          0.833842933177948,
+          1.1811023950576782,
+          6.69291353225708
+        ],
+        [
+          1.1811023950576782,
+          0.843570351600647,
+          6.69291353225708
+        ]
+      ],
+      "format": "glb",
+      "image_sha256": [],
+      "instance_count": 4,
+      "material_count": 2,
+      "mesh_count": 4,
+      "primitive_materials": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "provenance": {
+        "license": "by",
+        "revision": "556637099bf4fa79ea7b239d0d9c328b8a2e9ac8",
+        "url": "https://huggingface.co/datasets/allenai/objaverse/resolve/556637099bf4fa79ea7b239d0d9c328b8a2e9ac8/glbs/000-028/ef94916c83e441d483e6e3b9647d274b.glb"
+      },
+      "selected_scene_index": 0,
+      "source_id": "objaverse-1.0",
+      "status": "ok",
+      "vertex_count": 472
+    },
+    {
+      "asset_id": "100026",
+      "encoding": "ascii",
+      "face_count": 270,
+      "first_normal": [
+        6.123234e-17,
+        -1.0,
+        3.749399e-33
+      ],
+      "first_triangle": [
+        [
+          -17.5,
+          3.821808,
+          142.8358
+        ],
+        [
+          17.5,
+          3.821808,
+          99.83577
+        ],
+        [
+          17.5,
+          3.821808,
+          142.8358
+        ]
+      ],
+      "format": "stl",
+      "instance_count": 1,
+      "mesh_count": 1,
+      "provenance": {
+        "dataset": "Thingi10K",
+        "file": "100026.stl",
+        "license": "Creative Commons - Attribution - Share Alike",
+        "metadata_revision": "1eaf938c2a886321679144eb2b3cb8e0177de379",
+        "metadata_url": "https://huggingface.co/datasets/Thingi10K/Thingi10K/raw/1eaf938c2a886321679144eb2b3cb8e0177de379/metadata/input_summary.csv",
+        "snapshot": "original raw STL distribution, 2016-11; individual bytes frozen by manifest SHA-256",
+        "thing_id": 33732,
+        "url": "https://thingiverse-production-new.s3.amazonaws.com/assets/cc/d4/30/91/4b/battery_and_controller_housing_-_V3_-_1300mAhr_battery.stl",
+        "verified_date": "2026-11-07"
+      },
+      "source_id": "thingi10k",
+      "status": "ok"
+    },
+    {
+      "asset_id": "100045",
+      "encoding": "binary",
+      "face_count": 420,
+      "first_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "first_triangle": [
+        [
+          3.619999885559082,
+          1.8200000524520874,
+          2.380000114440918
+        ],
+        [
+          3.619999885559082,
+          1.9700000286102295,
+          2.380000114440918
+        ],
+        [
+          1.2799999713897705,
+          1.8200000524520874,
+          2.380000114440918
+        ]
+      ],
+      "format": "stl",
+      "instance_count": 1,
+      "mesh_count": 1,
+      "provenance": {
+        "dataset": "Thingi10K",
+        "file": "100045.stl",
+        "license": "Creative Commons - Attribution",
+        "metadata_revision": "1eaf938c2a886321679144eb2b3cb8e0177de379",
+        "metadata_url": "https://huggingface.co/datasets/Thingi10K/Thingi10K/raw/1eaf938c2a886321679144eb2b3cb8e0177de379/metadata/input_summary.csv",
+        "snapshot": "original raw STL distribution, 2016-11; individual bytes frozen by manifest SHA-256",
+        "thing_id": 34829,
+        "url": "https://thingiverse-production-new.s3.amazonaws.com/assets/c5/b4/d1/64/c6/Fot.stl",
+        "verified_date": "2026-11-07"
+      },
+      "source_id": "thingi10k",
+      "status": "ok"
+    }
+  ],
+  "selection": "4 diverse GLBs and ASCII/binary STL; small subset uses one GLB and both STL encodings."
+}

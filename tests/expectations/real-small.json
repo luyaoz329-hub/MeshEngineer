@@ -1,0 +1,144 @@
+{
+  "assets": [
+    {
+      "asset_id": "91761aa110cb4a9298ad28a0112b5d2b",
+      "face_count": 96,
+      "features": [
+        "hierarchy",
+        "images",
+        "multiple-primitives",
+        "table"
+      ],
+      "first_triangle": [
+        [
+          8.0,
+          3.0,
+          -7.0
+        ],
+        [
+          8.0,
+          -8.0,
+          -7.0
+        ],
+        [
+          8.0,
+          3.0,
+          -8.0
+        ]
+      ],
+      "format": "glb",
+      "image_sha256": [
+        "465c7db6b3485b7a245e5f45e08c16fdfb205da14bdc122e52ff3057bb00aff4"
+      ],
+      "instance_count": 8,
+      "material_count": 1,
+      "mesh_count": 8,
+      "primitive_materials": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "provenance": {
+        "license": "by",
+        "revision": "556637099bf4fa79ea7b239d0d9c328b8a2e9ac8",
+        "url": "https://huggingface.co/datasets/allenai/objaverse/resolve/556637099bf4fa79ea7b239d0d9c328b8a2e9ac8/glbs/000-046/91761aa110cb4a9298ad28a0112b5d2b.glb"
+      },
+      "selected_scene_index": 0,
+      "source_id": "objaverse-1.0",
+      "status": "ok",
+      "vertex_count": 192
+    },
+    {
+      "asset_id": "100026",
+      "encoding": "ascii",
+      "face_count": 270,
+      "first_normal": [
+        6.123234e-17,
+        -1.0,
+        3.749399e-33
+      ],
+      "first_triangle": [
+        [
+          -17.5,
+          3.821808,
+          142.8358
+        ],
+        [
+          17.5,
+          3.821808,
+          99.83577
+        ],
+        [
+          17.5,
+          3.821808,
+          142.8358
+        ]
+      ],
+      "format": "stl",
+      "instance_count": 1,
+      "mesh_count": 1,
+      "provenance": {
+        "dataset": "Thingi10K",
+        "file": "100026.stl",
+        "license": "Creative Commons - Attribution - Share Alike",
+        "metadata_revision": "1eaf938c2a886321679144eb2b3cb8e0177de379",
+        "metadata_url": "https://huggingface.co/datasets/Thingi10K/Thingi10K/raw/1eaf938c2a886321679144eb2b3cb8e0177de379/metadata/input_summary.csv",
+        "snapshot": "original raw STL distribution, 2016-11; individual bytes frozen by manifest SHA-256",
+        "thing_id": 33732,
+        "url": "https://thingiverse-production-new.s3.amazonaws.com/assets/cc/d4/30/91/4b/battery_and_controller_housing_-_V3_-_1300mAhr_battery.stl",
+        "verified_date": "2026-11-07"
+      },
+      "source_id": "thingi10k",
+      "status": "ok"
+    },
+    {
+      "asset_id": "100045",
+      "encoding": "binary",
+      "face_count": 420,
+      "first_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "first_triangle": [
+        [
+          3.619999885559082,
+          1.8200000524520874,
+          2.380000114440918
+        ],
+        [
+          3.619999885559082,
+          1.9700000286102295,
+          2.380000114440918
+        ],
+        [
+          1.2799999713897705,
+          1.8200000524520874,
+          2.380000114440918
+        ]
+      ],
+      "format": "stl",
+      "instance_count": 1,
+      "mesh_count": 1,
+      "provenance": {
+        "dataset": "Thingi10K",
+        "file": "100045.stl",
+        "license": "Creative Commons - Attribution",
+        "metadata_revision": "1eaf938c2a886321679144eb2b3cb8e0177de379",
+        "metadata_url": "https://huggingface.co/datasets/Thingi10K/Thingi10K/raw/1eaf938c2a886321679144eb2b3cb8e0177de379/metadata/input_summary.csv",
+        "snapshot": "original raw STL distribution, 2016-11; individual bytes frozen by manifest SHA-256",
+        "thing_id": 34829,
+        "url": "https://thingiverse-production-new.s3.amazonaws.com/assets/c5/b4/d1/64/c6/Fot.stl",
+        "verified_date": "2026-11-07"
+      },
+      "source_id": "thingi10k",
+      "status": "ok"
+    }
+  ],
+  "selection": "4 diverse GLBs and ASCII/binary STL; small subset uses one GLB and both STL encodings."
+}

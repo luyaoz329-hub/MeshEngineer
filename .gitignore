@@ -7,8 +7,10 @@ venv/
 !.env.template
 
 # Local development aids
+/AGENTS.md
 /.agents/
-/template/
+/temp/
+/configs/storage.local.json
 
 # Python caches and build artifacts
 __pycache__/

@@ -1,0 +1,21 @@
+{
+  "dataset": "Thingi10K",
+  "snapshot": "original raw STL distribution, 2016-11; individual bytes frozen by manifest SHA-256",
+  "metadata_revision": "1eaf938c2a886321679144eb2b3cb8e0177de379",
+  "metadata_url": "https://huggingface.co/datasets/Thingi10K/Thingi10K/raw/1eaf938c2a886321679144eb2b3cb8e0177de379/metadata/input_summary.csv",
+  "verified_date": "2026-11-07",
+  "assets": {
+    "100026": {
+      "file": "100026.stl",
+      "thing_id": 33732,
+      "license": "Creative Commons - Attribution - Share Alike",
+      "url": "https://thingiverse-production-new.s3.amazonaws.com/assets/cc/d4/30/91/4b/battery_and_controller_housing_-_V3_-_1300mAhr_battery.stl"
+    },
+    "100045": {
+      "file": "100045.stl",
+      "thing_id": 34829,
+      "license": "Creative Commons - Attribution",
+      "url": "https://thingiverse-production-new.s3.amazonaws.com/assets/c5/b4/d1/64/c6/Fot.stl"
+    }
+  }
+}

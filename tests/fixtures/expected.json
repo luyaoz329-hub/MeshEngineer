@@ -1,0 +1,30 @@
+{
+  "simple": {
+    "mesh_count": 1,
+    "vertex_count": 4,
+    "face_count": 2,
+    "instance_count": 1,
+    "expected_sha256": "5b170f791ee56a690a13f13ab043c95cf2db7d6cace0cd6cfcee3d6328b98057"
+  },
+  "attributed-scene": {
+    "mesh_count": 2,
+    "vertex_count": 6,
+    "face_count": 2,
+    "instance_count": 2,
+    "expected_sha256": "fb52cab7b979f95be6adab4afcb317c859c79cfd709d3c92fb469af8f17e8c3c"
+  },
+  "ascii-square": {
+    "mesh_count": 1,
+    "vertex_count": 4,
+    "face_count": 2,
+    "instance_count": 1,
+    "expected_sha256": "380f6f494798cfe09fcf99bc940c41da7dffbd33a217019ed61cfb743b1b874e"
+  },
+  "binary-square": {
+    "mesh_count": 1,
+    "vertex_count": 4,
+    "face_count": 2,
+    "instance_count": 1,
+    "expected_sha256": "16e8aa0b82d5115aa62281865d81a8e3897e1fa372faa94251f0978a45ee3414"
+  }
+}

@@ -1,0 +1,111 @@
+name: Regression
+
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      dataset:
+        description: External data suite on a prepared runner
+        type: choice
+        default: none
+        options: [none, real-small, registered]
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  base:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.14.6'
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          version: '0.13.7'
+          enable-cache: false
+      - name: Synchronize locked environment
+        run: |
+          mkdir -p temp/ci/base
+          uv sync --locked --no-python-downloads
+          uv --version > temp/ci/base/uv-version.txt
+          uv run --locked python --version > temp/ci/base/python-version.txt
+          uv pip freeze > temp/ci/base/packages.txt
+          cp uv.lock temp/ci/base/uv.lock
+      - name: Full offline base regression
+        run: |
+          set -o pipefail
+          uv run --locked --offline python - <<'PY' 2>&1 | tee temp/ci/base/tests.log
+          import json
+          from pathlib import Path
+          import unittest
+          suite = unittest.defaultTestLoader.discover('tests/base', top_level_dir='.')
+          planned = suite.countTestCases()
+          result = unittest.TextTestRunner(verbosity=2).run(suite)
+          summary = dict(planned=planned, executed=result.testsRun, failures=len(result.failures),
+                         errors=len(result.errors), skipped=len(result.skipped))
+          Path('temp/ci/base/summary.json').write_text(json.dumps(summary, indent=2) + '\n')
+          raise SystemExit(0 if planned > 0 and result.testsRun == planned and not result.skipped and result.wasSuccessful() else 1)
+          PY
+      - name: Strict source types
+        run: |
+          set -o pipefail
+          uv run --locked --offline mypy src 2>&1 | tee temp/ci/base/types.log
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        if: always()
+        with:
+          name: base-${{ github.run_id }}-${{ github.run_attempt }}
+          path: temp/ci/base/
+          if-no-files-found: error
+          retention-days: 14
+
+  external:
+    if: github.event_name == 'workflow_dispatch' && inputs.dataset != 'none'
+    needs: base
+    runs-on: [self-hosted, Linux, X64, meshengineer-data]
+    timeout-minutes: 30
+    env:
+      MESHENGINEER_TEST_MANIFEST: tests/manifests/${{ inputs.dataset }}.jsonl
+      MESHENGINEER_TEST_EXPECTATIONS: tests/expectations/${{ inputs.dataset }}.json
+      MESHENGINEER_TEST_STORAGE: ${{ vars.MESHENGINEER_TEST_STORAGE }}
+      MESHENGINEER_TEST_ARTIFACT_DIR: temp/ci/external
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.14.6'
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          version: '0.13.7'
+          enable-cache: false
+      - name: Synchronize and require prepared storage
+        run: |
+          mkdir -p temp/ci/external
+          uv sync --locked --no-python-downloads
+          uv pip freeze > temp/ci/external/packages.txt
+          uv --version > temp/ci/external/uv-version.txt
+          uv run --locked python --version > temp/ci/external/python-version.txt
+          cp uv.lock temp/ci/external/uv.lock
+          test -n "$MESHENGINEER_TEST_STORAGE"
+          test -f "$MESHENGINEER_TEST_STORAGE"
+      - name: Complete selected manifest
+        run: |
+          set -o pipefail
+          uv run --locked --offline python -m unittest discover -s tests/external -t . -v 2>&1 | tee temp/ci/external/tests.log
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        if: always()
+        with:
+          name: external-${{ inputs.dataset }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: temp/ci/external/
+          if-no-files-found: error
+          retention-days: 14
